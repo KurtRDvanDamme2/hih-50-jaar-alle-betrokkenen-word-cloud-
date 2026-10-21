@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woordenwolk: Rollen & Actoren (Congresprogramma)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        hih: {
+                            green: '#1E5939',
+                            orange: '#E35220',
+                            sand: '#F5F2EB',
+                            dark: '#2C3531',
+                            gray: '#555F5A'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .cloud-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem 1.8rem;
+            padding: 4rem 3rem;
+            background-color: #F5F2EB;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px -10px rgba(0,0,0,0.1);
+        }
+        .cloud-word {
+            line-height: 1.1;
+            transition: transform 0.3s ease, color 0.3s ease;
+            cursor: default;
+        }
+        .cloud-word:hover {
+            transform: scale(1.15) rotate(-2deg);
+            text-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 bg-white antialiased">
+    <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-8">
+            <h2 class="text-3xl font-black text-hih-dark mb-2 uppercase tracking-widest">Actoren op het HiH Congres</h2>
+            <p class="text-hih-gray">Een overzicht van alle groepen, rollen en beleidsvoerders genoemd in het programmaboekje.</p>
+        </div>
+        
+        <div class="cloud-container">
+            <!-- Heel hoge frequentie (Mensen is de allergrootste groep, gevolgd door deelnemers, voorzitter, etc) -->
+            <span class="cloud-word text-7xl font-black text-hih-orange">Mensen</span>
+            <span class="cloud-word text-5xl font-extrabold text-hih-dark">Ervaringsdeskundigen</span>
+            <span class="cloud-word text-5xl font-bold text-hih-green">Deelnemers</span>
+            <span class="cloud-word text-4xl font-black text-hih-gray">Voorzitter</span>
+            <span class="cloud-word text-4xl font-bold text-hih-orange">Hoogleraar</span>
+            
+            <!-- Hoge frequentie -->
+            <span class="cloud-word text-4xl font-semibold text-hih-dark">Leden</span>
+            <span class="cloud-word text-3xl font-black text-hih-green">Professionals</span>
+            <span class="cloud-word text-3xl font-extrabold text-hih-orange">Kunstenaars</span>
+            <span class="cloud-word text-3xl font-bold text-hih-gray">Coördinator</span>
+            <span class="cloud-word text-3xl font-medium text-hih-dark">Naasten</span>
+            <span class="cloud-word text-3xl font-semibold text-hih-green">Samenleving</span>
+            <span class="cloud-word text-3xl font-bold text-hih-orange">Beleidsmakers</span>
+            
+            <!-- Middelgrote frequentie -->
+            <span class="cloud-word text-2xl font-black text-hih-dark">Hulpverleners</span>
+            <span class="cloud-word text-2xl font-extrabold text-hih-green">Mantelzorgers</span>
+            <span class="cloud-word text-2xl font-bold text-hih-gray">Cliënten</span>
+            <span class="cloud-word text-2xl font-semibold text-hih-orange">Onderzoekers</span>
+            <span class="cloud-word text-2xl font-medium text-hih-dark">Vrijwilligers</span>
+            <span class="cloud-word text-2xl font-bold text-hih-green">Publiek</span>
+            <span class="cloud-word text-2xl font-black text-hih-orange">Bestuurder</span>
+            <span class="cloud-word text-2xl font-semibold text-hih-gray">Adviseur</span>
+            <span class="cloud-word text-2xl font-medium text-hih-dark">CEO</span>
+            
+            <!-- Lagere frequentie (1 tot 2 keer genoemd) -->
+            <span class="cloud-word text-xl font-bold text-hih-green">Families</span>
+            <span class="cloud-word text-xl font-medium text-hih-orange">Pleitbezorgers</span>
+            <span class="cloud-word text-xl font-semibold text-hih-gray">Adviseurs</span>
+            <span class="cloud-word text-xl font-bold text-hih-dark">Academici</span>
+            <span class="cloud-word text-lg font-medium text-hih-green">Familieleden</span>
+            <span class="cloud-word text-xl font-black text-hih-orange">Buurtwerkers</span>
+            <span class="cloud-word text-lg font-semibold text-hih-gray">Vertegenwoordigers</span>
+            <span class="cloud-word text-xl font-bold text-hih-dark">Sprekers</span>
+            <span class="cloud-word text-xl font-medium text-hih-green">Kloosterlingen</span>
+            <span class="cloud-word text-lg font-semibold text-hih-orange">Burgerschap</span>
+            <span class="cloud-word text-lg font-medium text-hih-gray">Medewerkers</span>
+            <span class="cloud-word text-xl font-bold text-hih-dark">Vrienden</span>
+            <span class="cloud-word text-xl font-black text-hih-green">Activisten</span>
+            <span class="cloud-word text-lg font-semibold text-hih-orange">Psychologen</span>
+            <span class="cloud-word text-xl font-bold text-hih-gray">Ervaringswerker</span>
+            <span class="cloud-word text-lg font-medium text-hih-dark">Wijkwerkers</span>
+            <span class="cloud-word text-lg font-semibold text-hih-green">Straathoekwerker</span>
+            <span class="cloud-word text-xl font-medium text-hih-orange">Lector</span>
+        </div>
+    </div>
+</body>
+</html>
+```eof
+
+Wat prachtig is om te zien in deze wolk (die 100% gebaseerd is op de tekst van de PDF), is dat het klassieke woord "cliënten" en "hulpverleners" relatief klein is, terwijl het algemene woord **"Mensen"** gigantisch is, gevolgd door **"Ervaringsdeskundigen"** en **"Deelnemers"**. Het bewijst dat jullie congres in de eerste plaats draait om menselijkheid en niet om hiërarchische titels.
